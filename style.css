@@ -13,6 +13,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    touch-action: manipulation;
 }
 
 .container {
@@ -79,6 +80,8 @@ body {
     box-shadow: 6px 6px 12px #cbcbcb, 
                -6px -6px 12px #ffffff;
     transition: all 0.2s ease;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .play-btn:active {
@@ -105,6 +108,7 @@ body {
     /* WYTŁOCZONY PASEK */
     box-shadow: inset 2px 2px 5px #cbcbcb, 
                 inset -2px -2px 5px #ffffff;
+    touch-action: manipulation;
 }
 
 .timeline::before {
@@ -202,6 +206,8 @@ body {
     box-shadow: inset 2px 2px 5px #cbcbcb, 
                 inset -2px -2px 5px #ffffff;
     transition: all 0.2s ease;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .dot.active {
@@ -250,6 +256,8 @@ body {
     box-shadow: 6px 6px 12px #cbcbcb, 
                -6px -6px 12px #ffffff;
     transition: all 0.2s ease;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .pin-btn-empty {
@@ -356,6 +364,8 @@ body {
     box-shadow: 6px 6px 12px #cbcbcb, 
                -6px -6px 12px #ffffff;
     transition: all 0.2s ease;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .modal-btn:active {
