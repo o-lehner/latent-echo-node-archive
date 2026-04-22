@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function generateFlowers(avoidElement = null) {
         container.innerHTML = '';
         const isMobile = window.innerWidth < 600;
-        const numberOfFlowers = isMobile ? 18 : 30;
+        const numberOfFlowers = isMobile ? 35 : 55;
         const placedFlowers = [];
         const flowerSize = 80; 
         const padding = 10; 
@@ -113,9 +113,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 mainContent.classList.remove('hidden');
                 mainContent.classList.add('fade-in');
                 
-                // Regenerate flowers to avoid the player now that it's visible
-                const player = document.querySelector('.audio-player');
-                generateFlowers(player);
+                // Regenerate flowers after a short delay to ensure the player layout is finalized
+                setTimeout(() => {
+                    const player = document.querySelector('.audio-player');
+                    generateFlowers(player);
+                }, 50);
             }, 500);
         } else {
             // Error
